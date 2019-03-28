@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Tetris</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Dekko|Lato:900|Rock+Salt");
+
+        div {
+            background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+        #ffcd28;
+        margin: 15rem 0;
+        margin-left: -33rem;
+        padding: 0.25rem 6.2rem;
+        text-align: left;
+        font-family: "Dekko", cursive;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        background-size: 15px, 100%;
+        border: 0.4rem solid #000;
+        position: absolute;
+        }
+
+        h1 {
+        max-width: 500px;
+        margin: 15rem 0;
+        margin-left: 12rem;
+        padding: 0.25rem 2rem;
+        text-align: right;
+        font-family: "Dekko", cursive;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+            #fff;
+        background-size: 15px, 100%;
+        border: 0.4rem solid #000;
+        position: absolute;
+        }
+        canvas{
+            display: block;
+            margin:0 auto;
+            border: 0.4rem solid #000;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            width: 100%;
+            background: #eee;
+            display: grid;
+            place-items: center;
+            background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+            #c52754;
+            background-size: 10px, auto;
+            }
+
+        }
+    </style>
+</head>
+<body>
+   <h1>TETRIS ver2.0</h1><br>
+   <div id="score">0</div>
+
+    <canvas id="tetris" width="300" height="600"></canvas>
+    <script src="matrix.js"></script>
+    <script src="DT.js"></script>
+  <!--   <audio autoplay loop>
+        <source src="song.mp3" type="audio/mp3">
+        </audio> -->
+
+</body>
+</html>
